@@ -1,0 +1,19 @@
+spring:
+  ai:
+    mcp:
+      server:
+        name: fintech-mcp-server
+  application:
+    name: fintech-mcp-server
+server:
+  connect-timeout: 120000
+  tomcat:
+    connection-timeout: 120000
+    keep-alive-timeout: 120000  # 60 seconds or higher
+    max-http-post-size: 16384
+    max-http-header-size: 16384
+    max-connections: 2000
+    max-threads: 2000
+logging:
+  level:
+    root: debug
